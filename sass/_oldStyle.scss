@@ -74,6 +74,8 @@ section {
 
 #section-section1 {
     background: url('../img/MDAF.jpg') no-repeat center;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
     background-size: cover;
     color: #fff;
     display: flex;

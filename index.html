@@ -13,6 +13,8 @@
     <script src="js/jquery-1.10.2.js"></script>
     <script src="js/jquery.touchSwipe.js"></script>
     <script src="js/jquery.horizonScroll.js"></script>
+    <!-- <script src="js/jquery.touchSwipe.js"></script>
+    <script src="js/jquery.horizonScroll.js"></script> -->
     <!-- Шрифты -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic" rel="stylesheet">
     <script>
@@ -23,20 +25,6 @@
 <noscript>
     <span>У вас отключен Java script</span>
 </noscript>
-<div class="popup">
-    <div class="popup-requestQuote">
-        <div class="closeBtn">
-            &#10006;
-        </div>
-        <h2 class="title">Запрос стоимости</h2>
-        <p class="curretnSlide">Мульчеры фронтальные DAF</p>
-        <input type="text" class="contactUser" placeholder="Организация">
-        <input type="text" class="contactUser" placeholder="Оборудование">
-        <input type="text" class="contactUser" placeholder="Контактное лицо">
-        <input type="text" class="contactUser" placeholder="E-mail">
-        <textarea name="comment" id="comm" cols="20" rows="10" class="contactUser"></textarea>
-    </div>
-</div>
 <header data-role="header" id="header">
     <nav class="menu">
         <ul>
@@ -67,7 +55,6 @@
         Заказать звонок
     </button>
 </header>
-
 <div class="horizon-prev"><img src="images/l-arrow.png"></div>
 <div class="horizon-next"><img src="images/r-arrow.png"></div>
 
@@ -117,18 +104,43 @@
 <section data-role="section" id="section-section6"></section>
 
 <footer data-role="footer" id="footer"></footer>
-
-<script type="text/javascript">
+<!-- Popups -->
+<div class="popup-request">
+    <div class="popup-requestQuote">
+        <div class="closeBtn">
+            &#10006;
+        </div>
+        <h2 class="title">Запрос стоимости</h2>
+        <p class="curretnSlide">Мульчеры фронтальные DAF</p>
+        <input type="text" class="contactUser" placeholder="Организация">
+        <input type="text" class="contactUser" placeholder="Оборудование">
+        <input type="text" class="contactUser" placeholder="Контактное лицо">
+        <input type="text" class="contactUser" placeholder="E-mail">
+        <textarea name="comment" id="comm" cols="20" rows="10" class="contactUser"></textarea>
+    </div>
+</div>
+<div class="popup-phone">
+    <div class="popup-phoneCallback">
+        <div class="closeBtn">
+            &#10006;
+        </div>
+        <h2 class="title">Заказать обратный звонок</h2>
+        <p class="number"></p>
+        <input type="text" class="contactUser" placeholder="Ваше имя">
+        <input type="text" id="phone-number" class="contactUser" placeholder="Ваш телефон">
+        <textarea name="comment" id="comm" cols="20" rows="10" class="contactUser"></textarea>
+    </div>
+</div>
+<script src="js/jquery.maskedinput.js"></script>
+<script>
     // By default, swipe is enabled.
     $('section').horizon();
-
     // If you do not want to include another plugin, TouchSwipe, you can set it to false in the default options by passing in the option as false.
     //$('section').horizon({swipe: false});
-
     $(document).on('click', '.go-to-2', function () {
         $(document).horizon('scrollTo', 'section-section2');
     });
 </script>
-
+        
 </body>
 </html>

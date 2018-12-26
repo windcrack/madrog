@@ -1,6 +1,11 @@
 // Старый css
 $yellowColor: #FBBA04;
 $colorBlack: #151515;
+.block-shadow{
+	background: url('../img/shadow.jpg') no-repeat center;
+	z-index: 2;
+	height: 100vh;
+}
 @import 'oldStyle';
 @import 'popups';
 
@@ -15,9 +20,8 @@ $colorBlack: #151515;
 	width: 270px;
 	height: 53px;
 	border: 1px solid $yellowColor;
-	background-color: transparent;
 	color: $yellowColor;
-	background: url('../img/phoneBtn.svg') left 5% center no-repeat;
+	background: url('../img/phoneBtn.svg') left 5% center no-repeat rgba(0, 0, 0, 0.5);
 	-webkit-transform: translateY(40%) translateX(-20%);
 	-ms-transform: translateY(40%) translateX(-20%);
 	-o-transform: translateY(40%) translateX(-20%);

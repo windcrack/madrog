@@ -1,3 +1,9 @@
+.block-shadow {
+  background: url("../img/shadow.jpg") no-repeat center;
+  z-index: 2;
+  height: 100vh;
+}
+
 html,
 body {
   width: 100%;
@@ -77,6 +83,8 @@ section {
 
 #section-section1 {
   background: url("../img/MDAF.jpg") no-repeat center;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
   background-size: cover;
   color: #fff;
   display: flex;
@@ -120,43 +128,60 @@ section {
   right: 20px;
 }
 
-.popup {
+.popup-request,
+.popup-phone {
   display: none;
 }
 
-.popup-requestQuote {
-  position: fixed;
-  width: 402px;
-  background: #151515;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.popup-requestQuote .closeBtn {
+.closeBtn {
   color: #FBBA04;
   align-self: end;
 }
-.popup-requestQuote .title,
-.popup-requestQuote .curretnSlide {
-  color: #fff;
-  text-align: center;
-  font-weight: 600;
-}
-.popup-requestQuote .title {
-  font-size: 1.25rem;
-}
-.popup-requestQuote .curretnSlide {
-  font-size: 1.125rem;
-}
-.popup-requestQuote .contactUser {
+
+.contactUser {
   border: solid 1px #FBBA04;
   border-radius: 5px;
   color: #FBBA04;
   background: rgba(196, 196, 196, 0.1);
   margin: 0.5rem;
 }
-.popup-requestQuote input[type=text] {
+
+input[type=text],
+textarea {
   padding: 0.5rem 0 0.5rem 1rem;
+}
+
+.popup-requestQuote,
+.popup-phoneCallback {
+  position: fixed;
+  width: 402px;
+  background: #151515;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.popup-requestQuote .title,
+.popup-requestQuote .curretnSlide,
+.popup-phoneCallback .title,
+.popup-phoneCallback .curretnSlide {
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+}
+.popup-requestQuote .title,
+.popup-phoneCallback .title {
+  font-size: 1.25rem;
+}
+.popup-requestQuote .curretnSlide,
+.popup-phoneCallback .curretnSlide {
+  font-size: 1.125rem;
+}
+
+.popup-phoneCallback {
+  top: 1rem;
+  right: 0;
 }
 
 .menu {
@@ -170,9 +195,8 @@ section {
   width: 270px;
   height: 53px;
   border: 1px solid #FBBA04;
-  background-color: transparent;
   color: #FBBA04;
-  background: url("../img/phoneBtn.svg") left 5% center no-repeat;
+  background: url("../img/phoneBtn.svg") left 5% center no-repeat rgba(0, 0, 0, 0.5);
   -webkit-transform: translateY(40%) translateX(-20%);
   -ms-transform: translateY(40%) translateX(-20%);
   -o-transform: translateY(40%) translateX(-20%);
