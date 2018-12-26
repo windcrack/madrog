@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, shrink-to-fit=no">
+    <!-- Мои стили -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Скрипт скролла -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/jquery.touchSwipe.js"></script>
+    <script src="js/jquery.horizonScroll.js"></script>
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic" rel="stylesheet">
+    <script>
+        document.write("У вас отключен Java script")
+    </script>
+</head>
+<body>
+<noscript>
+    <span>У вас отключен Java script</span>
+</noscript>
+<div class="popup">
+    <div class="popup-requestQuote">
+        <div class="closeBtn">
+            &#10006;
+        </div>
+        <h2 class="title">Запрос стоимости</h2>
+        <p class="curretnSlide">Мульчеры фронтальные DAF</p>
+        <input type="text" class="contactUser" placeholder="Организация">
+        <input type="text" class="contactUser" placeholder="Оборудование">
+        <input type="text" class="contactUser" placeholder="Контактное лицо">
+        <input type="text" class="contactUser" placeholder="E-mail">
+        <textarea name="comment" id="comm" cols="20" rows="10" class="contactUser"></textarea>
+    </div>
+</div>
+<header data-role="header" id="header">
+    <nav class="menu">
+        <ul>
+            <li>
+                <a href="#"><span><img src="img/logo.svg" alt="Лого"></span></a>
+            </li>
+            <li>
+                <a href="#" class="header-active"><span>Каталог</span></a>
+            </li>
+            <li>
+                <a href="#"><span>Обслуживание</span></a>
+            </li>
+            <li>
+                <a href="#"><span>Denis Cimaf</span></a>
+            </li>
+            <li>
+                <a href="#"><span>Контакты</span></a>
+            </li>
+            <li>
+                <a href="#"><span>You<div style="color: red; display: inline-block;">Tube</div></span></a>
+            </li>
+            <li>
+                <a href="#"><span>Section</span></a>
+            </li>
+        </ul> 
+    </nav>
+    <button class="header-nav-call">
+        Заказать звонок
+    </button>
+</header>
+
+<div class="horizon-prev"><img src="images/l-arrow.png"></div>
+<div class="horizon-next"><img src="images/r-arrow.png"></div>
+
+<section data-role="section" id="section-section1">
+    <div class="container">
+        <div class="text-block">
+            <h1 class="title">Фронтальные мульчеры  DAH</h1>
+            <p class="description">Максимально эффективная расчистка больших территорий</p>
+            <div class="button-block">
+                <div class="col-auto">
+                    <button class="header-nav-call">
+                        Заказать звонок
+                    </button>
+                </div>
+                <div class="col-auto offset-1">
+                    <button class="header-nav-call">
+                        Заказать звонок
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section data-role="section" id="section-section2">
+    <div class="container">
+        <div class="text-block">
+            <h1 class="title">Фронтальные мульчеры  DAF</h1>
+            <p class="description">Максимально эффективная расчистка больших территорий</p>
+            <div class="button-block">
+                <div class="col-auto">
+                    <button class="header-nav-call">
+                        Заказать звонок
+                    </button>
+                </div>
+                <div class="col-auto offset-1">
+                    <button class="header-nav-call">
+                        Заказать звонок
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section data-role="section" id="section-section3"></section>
+<section data-role="section" id="section-section4"></section>
+<section data-role="section" id="section-section5"></section>
+<section data-role="section" id="section-section6"></section>
+
+<footer data-role="footer" id="footer"></footer>
+
+<script type="text/javascript">
+    // By default, swipe is enabled.
+    $('section').horizon();
+
+    // If you do not want to include another plugin, TouchSwipe, you can set it to false in the default options by passing in the option as false.
+    //$('section').horizon({swipe: false});
+
+    $(document).on('click', '.go-to-2', function () {
+        $(document).horizon('scrollTo', 'section-section2');
+    });
+</script>
+
+</body>
+</html>

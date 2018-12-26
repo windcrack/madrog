@@ -1,0 +1,38 @@
+.popup{
+	display: none;
+}
+.popup-requestQuote{
+	position: fixed;
+	width: 402px;
+	background: $colorBlack;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	.closeBtn{
+		color: $yellowColor;
+		align-self: end;
+	}
+	.title,
+	.curretnSlide{
+		color: #fff;
+		text-align: center;
+		font-weight: 600;
+	}
+	.title{
+		font-size: 1.25rem;
+	}
+	.curretnSlide{
+		font-size: 1.125rem;
+	}
+	.contactUser{
+		border: solid 1px $yellowColor;
+		border-radius: 5px;
+		color: $yellowColor;
+		background: rgba(196, 196, 196, 0.1);
+		// padding: 0.5rem;
+		margin: 0.5rem;
+	}
+	input[type=text]{
+		padding: 0.5rem 0 0.5rem 1rem;
+	}
+}

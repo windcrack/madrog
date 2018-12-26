@@ -1,0 +1,62 @@
+// Старый css
+$yellowColor: #FBBA04;
+$colorBlack: #151515;
+@import 'oldStyle';
+@import 'popups';
+
+.menu{
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+	align-content: center;
+}
+
+.header-nav-call{
+	width: 270px;
+	height: 53px;
+	border: 1px solid $yellowColor;
+	background-color: transparent;
+	color: $yellowColor;
+	background: url('../img/phoneBtn.svg') left 5% center no-repeat;
+	-webkit-transform: translateY(40%) translateX(-20%);
+	-ms-transform: translateY(40%) translateX(-20%);
+	-o-transform: translateY(40%) translateX(-20%);
+	-moz-transform: translateY(40%) translateX(-20%);
+	transform: translateY(40%) translateX(-20%);
+	cursor: pointer;
+}
+.header-active{
+	color: $yellowColor;
+}
+.shadow-block{
+	background: url('../img/shadow.jpg') no-repeat center;
+	background-size: cover;
+	height: 100%;
+}
+.container{
+	margin-bottom: 2.5rem;
+	.text-block{
+		height: 100%;
+		display: flex;
+		justify-content: flex-end;
+		flex-direction: column;
+		align-content: center;
+		.button-block{
+			display: flex;
+			justify-content: space-starts;
+			transform: translateY(-40%) translateX(5%);
+		}
+		h1.title{
+			font-weight: bold;
+			font-size: 3.75rem;
+		}
+		p.description{
+			font-size: 1.75rem;
+			width: 32rem;
+			font-weight: 600;
+			column-count: 1;
+			column-width: 100px;
+		}
+	}
+	
+}

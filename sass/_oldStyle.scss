@@ -1,0 +1,116 @@
+html, 
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Open sans', san-serif;
+    background-color: #000;
+}
+img, 
+iframe{
+    max-width: 100%;
+}
+section, 
+header, 
+footer, 
+nav, 
+div, 
+span,
+ul, 
+li, 
+a {
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: transparent;
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    nav {
+        transform: translateY(70%);
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        border-bottom: 1px solid #FFFF00;
+        li {
+            display: inline-block;
+            padding: 0 20px;
+        }
+        a {
+            font-weight: 700;
+            text-decoration: none;
+            color: #fff;
+            height: 50px;
+            display: block;
+            position: relative;
+            &:hover{
+                color: $yellowColor;
+            }
+            span {
+                position: relative;
+                top: 10%;
+                transform: translateY(-40%);
+                display: inline-block;
+            }
+        }
+    }
+}
+section {
+    float: left;
+    display: block;
+    height: 100%;
+    margin: 0;
+}
+
+#section-section1 {
+    background: url('../img/MDAF.jpg') no-repeat center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+}
+
+#section-section2 {
+    background: url('../img/MDAH.jpg') no-repeat center;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+}
+
+#section-section3 {
+    background: #27ae60;
+}
+
+#section-section4 {
+    background: #c0392b;
+}
+#section-section5 {
+    background: #E9967A;
+}
+#section-section6 {
+    background: #FFB6C1;
+}
+
+.horizon-prev, .horizon-next {
+    position: fixed;
+    top: 50%;
+    margin-top: -24px;
+    z-index: 9999;
+}
+
+.horizon-prev {
+    left: 20px;
+}
+
+.horizon-next {
+    right: 20px;
+}
