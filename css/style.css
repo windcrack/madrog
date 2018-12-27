@@ -161,6 +161,11 @@ textarea {
   justify-content: space-around;
   border-radius: 10px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  z-index: 500000;
+}
+.popup-requestQuote .closeBtn,
+.popup-phoneCallback .closeBtn {
+  color: #FBBA04;
 }
 .popup-requestQuote .title,
 .popup-requestQuote .curretnSlide,
@@ -191,17 +196,26 @@ textarea {
   align-content: center;
 }
 
-.header-nav-call {
+.header-nav-call,
+.buttonInPopups {
   width: 270px;
   height: 53px;
   border: 1px solid #FBBA04;
   color: #FBBA04;
   background: url("../img/phoneBtn.svg") left 5% center no-repeat rgba(0, 0, 0, 0.5);
+}
+
+.header-nav-call {
   -webkit-transform: translateY(40%) translateX(-20%);
   -ms-transform: translateY(40%) translateX(-20%);
   -o-transform: translateY(40%) translateX(-20%);
   -moz-transform: translateY(40%) translateX(-20%);
   transform: translateY(40%) translateX(-20%);
+  cursor: pointer;
+}
+
+.buttonInPopups {
+  margin: 1rem;
   cursor: pointer;
 }
 
@@ -240,6 +254,42 @@ textarea {
   font-weight: 600;
   column-count: 1;
   column-width: 100px;
+}
+
+.section-menu {
+  display: flex;
+  padding-left: 3rem;
+}
+.section-menu .vertical {
+  display: flex;
+}
+.section-menu .vertical ul {
+  list-style: none;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-weight: 700;
+}
+.section-menu .vertical ul a {
+  color: #fff;
+}
+.section-menu .vertical ul .active-slide {
+  color: #FBBA04;
+}
+
+@media screen and (max-width: 1368px) {
+  .popup-requestQuote,
+  .popup-phoneCallback {
+    width: 302px;
+  }
+
+  .popup-requestQuote {
+    left: 12rem;
+    top: 4rem;
+  }
+
+  .popup-phoneCallback {
+    right: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

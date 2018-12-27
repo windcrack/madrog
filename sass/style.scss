@@ -16,17 +16,24 @@ $colorBlack: #151515;
 	align-content: center;
 }
 
-.header-nav-call{
+.header-nav-call,
+.buttonInPopups{
 	width: 270px;
 	height: 53px;
 	border: 1px solid $yellowColor;
 	color: $yellowColor;
 	background: url('../img/phoneBtn.svg') left 5% center no-repeat rgba(0, 0, 0, 0.5);
+}
+.header-nav-call{
 	-webkit-transform: translateY(40%) translateX(-20%);
 	-ms-transform: translateY(40%) translateX(-20%);
 	-o-transform: translateY(40%) translateX(-20%);
 	-moz-transform: translateY(40%) translateX(-20%);
 	transform: translateY(40%) translateX(-20%);
+	cursor: pointer;
+}
+.buttonInPopups{
+	margin: 1rem;
 	cursor: pointer;
 }
 .header-active{
@@ -64,3 +71,23 @@ $colorBlack: #151515;
 	}
 	
 }
+.section-menu{
+	display: flex;
+	padding-left: 3rem;
+	.vertical{
+		display: flex;
+		ul{
+			list-style: none;
+			margin-top: auto;
+			margin-bottom: auto;
+			font-weight: 700;
+			a{
+				color: #fff;
+			}	
+			.active-slide{
+				color: $yellowColor;
+			} 
+		}
+	}
+}
+@import 'media';

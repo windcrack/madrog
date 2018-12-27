@@ -57,8 +57,19 @@
 </header>
 <div class="horizon-prev"><img src="images/l-arrow.png"></div>
 <div class="horizon-next"><img src="images/r-arrow.png"></div>
-
 <section data-role="section" id="section-section1">
+    <div class="section-menu">
+        <nav class="vertical">
+            <ul>
+                <li><a class="active-slide" href="#section-section1">DAH</a></li>
+                <li><a href="#section-section2">DAF</a></li>
+                <li><a href="#section-section3">AFD</a></li>
+                <li><a href="#section-section4">FAD</a></li>
+                <li><a href="#section-section5">ADF</a></li>
+                <li><a href="#section-section6">FDA</a></li>
+            </ul>
+        </nav>
+    </div>
     <div class="container">
         <div class="text-block">
             <h1 class="title">Фронтальные мульчеры  DAH</h1>
@@ -79,6 +90,18 @@
     </div>
 </section>
 <section data-role="section" id="section-section2">
+    <div class="section-menu">
+        <nav class="vertical">
+            <ul>
+                <li><a href="#section-section1">DAH</a></li>
+                <li><a class="active-slide" href="#section-section2">DAF</a></li>
+                <li><a href="#section-section3">AFD</a></li>
+                <li><a href="#section-section4">FAD</a></li>
+                <li><a href="#section-section5">ADF</a></li>
+                <li><a href="#section-section6">FDA</a></li>
+            </ul>
+        </nav>
+    </div>
     <div class="container">
         <div class="text-block">
             <h1 class="title">Фронтальные мульчеры  DAF</h1>
@@ -108,7 +131,7 @@
 <div class="popup-request">
     <div class="popup-requestQuote">
         <div class="closeBtn">
-            &#10006;
+            <span>&#10006;</span>
         </div>
         <h2 class="title">Запрос стоимости</h2>
         <p class="curretnSlide">Мульчеры фронтальные DAF</p>
@@ -116,7 +139,8 @@
         <input type="text" class="contactUser" placeholder="Оборудование">
         <input type="text" class="contactUser" placeholder="Контактное лицо">
         <input type="text" class="contactUser" placeholder="E-mail">
-        <textarea name="comment" id="comm" cols="20" rows="10" class="contactUser"></textarea>
+        <textarea name="comment" id="comm" cols="10" rows="3" class="contactUser"></textarea>
+        <button class="buttonInPopups">Отправить</button>
     </div>
 </div>
 <div class="popup-phone">
@@ -128,10 +152,12 @@
         <p class="number"></p>
         <input type="text" class="contactUser" placeholder="Ваше имя">
         <input type="text" id="phone-number" class="contactUser" placeholder="Ваш телефон">
-        <textarea name="comment" id="comm" cols="20" rows="10" class="contactUser"></textarea>
+        <textarea name="comment" id="comm" cols="15" rows="3" class="contactUser"></textarea>
+        <button class="buttonInPopups">Отправить</button>
     </div>
 </div>
 <script src="js/jquery.maskedinput.js"></script>
+<script src="js/script.js"></script>
 <script>
     // By default, swipe is enabled.
     $('section').horizon();
