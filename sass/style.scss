@@ -31,24 +31,25 @@ $colorBlack: #151515;
 	background: url('../img/phoneBtn.svg') left 5% center no-repeat rgba(0, 0, 0, 0.5);
 }
 .button-application{
-	// -webkit-transform: translateY(40%) translateX(-70%);
-	// -ms-transform: translateY(40%) translateX(-70%);
-	// -o-transform: translateY(40%) translateX(-70%);
-	// -moz-transform: translateY(40%) translateX(-70%);
-	// transform: translateY(40%) translateX(-70%);
+	-webkit-transform: translateY(40%) translateX(-70%);
+	-ms-transform: translateY(40%) translateX(-70%);
+	-o-transform: translateY(40%) translateX(-70%);
+	-moz-transform: translateY(40%) translateX(-70%);
+	transform: translateY(40%) translateX(-70%);
 	background: url('../img/appBtn.svg') left 5% center no-repeat rgba(0, 0, 0, 0.5);
 }
 .button-description{
-	// -webkit-transform: translateY(40%) translateX(-70%);
-	// -ms-transform: translateY(40%) translateX(-70%);
-	// -o-transform: translateY(40%) translateX(-70%);
-	// -moz-transform: translateY(40%) translateX(-70%);
-	// transform: translateY(40%) translateX(-70%);
+	-webkit-transform: translateY(40%) translateX(-70%);
+	-ms-transform: translateY(40%) translateX(-70%);
+	-o-transform: translateY(40%) translateX(-70%);
+	-moz-transform: translateY(40%) translateX(-70%);
+	transform: translateY(40%) translateX(-70%);
 	background: url('../img/descBtn.svg') left 5% center no-repeat rgba(0, 0, 0, 0.5);
 }
 .buttonInPopups{
-	margin: 1rem;
+	margin: 1rem auto;
 	cursor: pointer;
+	background: rgba(0, 0, 0, 0.5);
 }
 .header-active{
 	color: $yellowColor;
@@ -57,6 +58,12 @@ $colorBlack: #151515;
 	background: url('../img/shadow.jpg') no-repeat center;
 	background-size: cover;
 	height: 100%;
+}
+.number{
+	color: $yellowColor;
+	border: none;
+	padding: 1rem;
+	margin: 0 auto;
 }
 .container{
 	margin-bottom: 2.5rem;

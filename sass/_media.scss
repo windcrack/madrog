@@ -10,4 +10,23 @@
 	.popup-phoneCallback{
 		right: 2rem;
 	}
+	header{
+		ul{
+			li {
+	            display: inline-block;
+	            padding: 0 1.25rem;
+	            &:first-child{
+	                padding: 0 1.25rem;
+	            }
+	        }
+		}
+	}
+	// .button-description,
+	// .button-application{
+	// 	-webkit-transform: translateY(40%) translateX(-70%);
+	// 	-ms-transform: translateY(40%) translateX(-50%);
+	// 	-o-transform: translateY(40%) translateX(-50%);
+	// 	-moz-transform: translateY(40%) translateX(-0%);
+	// 	transform: translateY(40%) translateX(-70%);
+	// }
 }

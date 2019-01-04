@@ -157,8 +157,13 @@ textarea {
     font-size: 1.125rem; }
 
 .popup-phoneCallback {
-  top: 1rem;
-  right: 0; }
+  top: 0.5rem;
+  right: 0;
+  transform: translateX(-50%); }
+
+.popup-requestQuote {
+  top: 41%;
+  left: 16%; }
 
 .menu {
   display: flex;
@@ -181,14 +186,25 @@ textarea {
   background: url("../img/phoneBtn.svg") left 5% center no-repeat rgba(0, 0, 0, 0.5); }
 
 .button-application {
+  -webkit-transform: translateY(40%) translateX(-70%);
+  -ms-transform: translateY(40%) translateX(-70%);
+  -o-transform: translateY(40%) translateX(-70%);
+  -moz-transform: translateY(40%) translateX(-70%);
+  transform: translateY(40%) translateX(-70%);
   background: url("../img/appBtn.svg") left 5% center no-repeat rgba(0, 0, 0, 0.5); }
 
 .button-description {
+  -webkit-transform: translateY(40%) translateX(-70%);
+  -ms-transform: translateY(40%) translateX(-70%);
+  -o-transform: translateY(40%) translateX(-70%);
+  -moz-transform: translateY(40%) translateX(-70%);
+  transform: translateY(40%) translateX(-70%);
   background: url("../img/descBtn.svg") left 5% center no-repeat rgba(0, 0, 0, 0.5); }
 
 .buttonInPopups {
-  margin: 1rem;
-  cursor: pointer; }
+  margin: 1rem auto;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.5); }
 
 .header-active {
   color: #FBBA04; }
@@ -197,6 +213,12 @@ textarea {
   background: url("../img/shadow.jpg") no-repeat center;
   background-size: cover;
   height: 100%; }
+
+.number {
+  color: #FBBA04;
+  border: none;
+  padding: 1rem;
+  margin: 0 auto; }
 
 .container {
   margin-bottom: 2.5rem; }
@@ -245,6 +267,12 @@ textarea {
     top: 4rem; }
 
   .popup-phoneCallback {
-    right: 2rem; } }
+    right: 2rem; }
+
+  header ul li {
+    display: inline-block;
+    padding: 0 1.25rem; }
+    header ul li:first-child {
+      padding: 0 1.25rem; } }
 
 /*# sourceMappingURL=style.css.map */
