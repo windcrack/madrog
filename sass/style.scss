@@ -95,6 +95,8 @@ $colorBlack: #151515;
 .section-menu{
 	display: flex;
 	padding-left: 3rem;
+	position: fixed;
+	top: 45%;
 	.vertical{
 		display: flex;
 		ul{

@@ -244,7 +244,9 @@ textarea {
 
 .section-menu {
   display: flex;
-  padding-left: 3rem; }
+  padding-left: 3rem;
+  position: fixed;
+  top: 45%; }
   .section-menu .vertical {
     display: flex; }
     .section-menu .vertical ul {

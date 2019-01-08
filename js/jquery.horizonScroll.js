@@ -134,7 +134,7 @@
             return;
         }
 
-        console.log('Scroll to: ' + index);
+        // console.log('Scroll to: ' + index);
         $.fn.horizon.defaults.i = index;
 
         var $section = $($.fn.horizon.defaults.sections[index]);
@@ -143,9 +143,11 @@
         if (index === 0) {
             $('.horizon-prev').hide();
             $('.horizon-next').show();
+            // scrollTo($.fn.horizon.defaults.limit);
         } else if (index === $.fn.horizon.defaults.limit - 1) {
-            $('.horizon-prev').show();
-            $('.horizon-next').hide();
+            // $('.horizon-prev').show();
+            // $('.horizon-next').hide();
+            // scrollTo($.fn.horizon.defaults.limit);
         } else {
             $('.horizon-next').show();
             $('.horizon-prev').show();
@@ -153,17 +155,19 @@
     };
 
     var scrollLeft = function () {
-        console.log('Scroll left');
+        // console.log('Scroll left');
 
         var i2 = $.fn.horizon.defaults.i - 1;
 
         if (i2 > -1) {
             scrollTo(i2, $.fn.horizon.defaults.scrollDuration);
+        }else if(i2 == 0){
+            $.fn.horizon.defaults.limit - 1
         }
     };
 
     var scrollRight = function () {
-        console.log('Scroll right');
+        // console.log('Scroll right');
 
         var i2 = $.fn.horizon.defaults.i + 1;
 
