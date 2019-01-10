@@ -142,23 +142,16 @@
         var $section = $($.fn.horizon.defaults.sections[index]);
         $('html,body').animate({scrollLeft: $section.offset().left}, speed, 'swing', $.fn.horizon.defaults.fnCallback(index));
 
-        if (index === 0) {
-            $('.horizon-prev').hide();
-            $('.horizon-next').show();
-        } else if (index === $.fn.horizon.defaults.limit - 1) {
-            $('.horizon-prev').show();
-            $('.horizon-next').hide();
-        } else {
-            $('.horizon-next').show();
-            $('.horizon-prev').show();
-        }
+        
     };
 
     let selectActive = function(){
-        var liActive = $('a');
-        
-          $(liActive).removeClass('active-slide');
-          $(this).addClass('active-slide');
+        let elementActive = $('a');
+        if (!$(elementActive).hasClass('active')) {
+            $(elementActive).toggleClass('active');
+        }else{
+            $(elementActive).toggleClass('active');
+        }
     }
 
     var scrollLeft = function () {
@@ -167,10 +160,12 @@
         var i2 = $.fn.horizon.defaults.i - 1;
         if (i2 > -1) {
             scrollTo(i2, $.fn.horizon.defaults.scrollDuration);
+            selectActive();
 
         }else if($.fn.horizon.defaults.i == 0){
             scrollTo($.fn.horizon.defaults.limit - 1);
         }
+        
     };
 
     var scrollRight = function () {
@@ -184,6 +179,7 @@
             scrollTo($.fn.horizon.defaults.i = 0);
         }
         selectActive();
+        
     };
 
     // Executes on 'scrollbegin'.
