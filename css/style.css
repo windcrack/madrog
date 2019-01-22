@@ -97,7 +97,7 @@ section {
 }
 #section-section1:after {
   content: '';
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(21, 21, 21, 0.4);
   position: absolute;
   top: 0;
   left: 0;
@@ -211,6 +211,36 @@ textarea {
   left: 16%;
 }
 
+.popup-request-visible {
+  width: 402px;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 2;
+  margin: auto;
+}
+.popup-request-visible .popupRequsetVisible {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.popup-request-visible .closeBtn {
+  color: #FBBA04;
+}
+.popup-request-visible .title,
+.popup-request-visible .curretnSlide {
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+}
+.popup-request-visible .title {
+  font-size: 1.25rem;
+}
+.popup-request-visible .curretnSlide {
+  font-size: 1.125rem;
+}
+
 .menu {
   display: flex;
   justify-content: space-between;
@@ -321,10 +351,11 @@ textarea {
 .contact {
   background: url("../img/bgContact.jpg") no-repeat;
   background-size: cover;
+  display: flex;
 }
 .contact:after {
   content: '';
-  background: rgba(0, 0, 0, 0.4);
+  background-color: rgba(21, 21, 21, 0.4);
   position: absolute;
   top: 0;
   left: 0;
@@ -333,6 +364,9 @@ textarea {
   z-index: 1;
 }
 
+.container {
+  margin: 0 auto;
+}
 .container .blockContact {
   display: flex;
   justify-content: space-between;
@@ -366,9 +400,49 @@ textarea {
   color: #FBBA04;
 }
 
+.servis {
+  background: url("../img/bgServis.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+}
+.servis:after {
+  content: '';
+  background-color: rgba(21, 21, 21, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.container {
+  color: #fff;
+}
+.container .servisBlock {
+  z-index: 2;
+  display: flex;
+  margin: 10.375rem auto;
+  justify-content: space-between;
+}
+.container .servisBlock .servisForm {
+  display: flex;
+  flex-direction: column;
+}
+.container .servisBlock .servisTextBlock h2 {
+  font-size: 2.1875rem;
+  text-transform: uppercase;
+}
+.container .servisBlock .servisTextBlock p.servisText {
+  column-count: 1;
+  column-width: 10rem;
+}
+
 @media screen and (max-width: 1368px) {
   .popup-requestQuote,
-  .popup-phoneCallback {
+  .popup-phoneCallback
+  .popupRequsetVisible {
     width: 302px;
   }
 
@@ -400,6 +474,16 @@ textarea {
 
   .container .text-block {
     transform: translateX(3%);
+  }
+
+  .container .blockContact,
+  .container .servisBlock {
+    margin: 8.375rem auto;
+  }
+  .container .blockContact .servisTextBlock h2,
+  .container .servisBlock .servisTextBlock h2 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
   }
 }
 

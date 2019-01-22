@@ -1,6 +1,7 @@
 @media screen and (max-width: 1368px){
 	.popup-requestQuote,
-	.popup-phoneCallback{
+	.popup-phoneCallback
+	.popupRequsetVisible{
 		width: 302px;
 	}
 	.popup-requestQuote{
@@ -32,6 +33,19 @@
 	.container{
 		.text-block{
 			transform: translateX(3%);
+		}
+	}
+	.container{
+		.blockContact,
+		.servisBlock{
+			margin: 8.375rem auto;
+			.servisTextBlock{
+				h2{
+					font-size: 1.8rem;
+					text-transform: uppercase;
+				}
+			}
+			
 		}
 	}
 }

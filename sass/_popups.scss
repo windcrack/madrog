@@ -55,3 +55,33 @@ textarea{
 	top: 41%;
 	left: 16%;
 }
+// Видимая
+.popup-request-visible{
+	width: 402px;
+	background: transparent;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	z-index: 2;
+	margin: auto;
+	.popupRequsetVisible{
+		display:flex;
+		justify-content: space-between;
+		flex-direction: column;
+	}
+	.closeBtn{
+		color:$yellowColor;
+	}
+	.title,
+	.curretnSlide{
+		color: #fff;
+		text-align: center;
+		font-weight: 600;
+	}
+	.title{
+		font-size: 1.25rem;
+	}
+	.curretnSlide{
+		font-size: 1.125rem;
+	}
+}
