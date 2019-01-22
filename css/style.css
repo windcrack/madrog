@@ -318,6 +318,54 @@ textarea {
   color: #FBBA04;
 }
 
+.contact {
+  background: url("../img/bgContact.jpg") no-repeat;
+  background-size: cover;
+}
+.contact:after {
+  content: '';
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.container .blockContact {
+  display: flex;
+  justify-content: space-between;
+  margin: 10.375rem auto;
+}
+.container .blockContact .contactMap {
+  width: 718px;
+  height: 447px;
+  frameborder: 0;
+  border: 0;
+  z-index: 3;
+}
+.container .blockContact .contactDescription {
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+}
+.container .blockContact .contactDescription .descText {
+  column-count: 1;
+  column-width: 310px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+  color: #FFFFFF;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.container .blockContact .contactDescription .descText a {
+  color: #fff;
+}
+.container .blockContact .contactDescription .descText a:hover {
+  color: #FBBA04;
+}
+
 @media screen and (max-width: 1368px) {
   .popup-requestQuote,
   .popup-phoneCallback {
