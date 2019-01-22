@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no, shrink-to-fit=no">
+    <!-- Мои стили -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Скрипт скролла -->
+    <script src="js/jquery-1.10.2.js"></script>
+    <script src="js/jquery.touchSwipe.js"></script>
+    <script src="js/jquery.horizonScroll.js"></script>
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+<noscript>
+    <span>У вас отключен Java script</span>
+</noscript>
+<header data-role="header" id="header">
+    <nav class="menu">
+        <ul>
+            <li>
+                <a href="index.html"><span><img src="img/logo.svg" alt="Лого"></span></a>
+            </li>
+            <li>
+                <a href="index.html"><span>Каталог</span></a>
+            </li>
+            <li>
+                <a href="servis.html" class="header-active"><span>Обслуживание</span></a>
+            </li>
+            <li>
+                <a href="contackt.html"><span>Denis Cimaf</span></a>
+            </li>
+            <li>
+                <a href="#"><span>Контакты</span></a>
+            </li>
+            <li>
+                <a href="#"><span>You<div style="color: red; display: inline-block;">Tube</div></span></a>
+            </li>
+            <li>
+                <a href="#"><span>Section</span></a>
+            </li>
+        </ul>
+        <button class="header-nav-call">
+            Заказать звонок
+        </button>
+    </nav>   
+</header>
+<main>
+    <section class="servis">
+        <div class="container">
+            <div class="servisBlock">
+                <div class="servisTextBlock">
+                    <h2>Сервисное обслуживание и запасные части</h2>
+                    <p class="servisText">Компания DENIS CIMAF предлагает услуги по обслуживанию широкого ассортимента продукции, а также решения, которые помогут нашим клиентам увеличить производительность и быть впереди конкурентов. Высочайший уровень сервиса основывается на многолетнем опыте, совмещенном с инновационными продуктами ведущего производителя промышленных кусторезов-мульчеров для экскаваторов, экскаваторов-погрузчиков, ковшовых погрузчиков, лесохозяйственных тракторов и грейдеров компании DENIS CIMAF.</p>
+                    <p class="servisText">Для получения подробной информации о наших инновационных решениях по техническому обслуживанию или постгарантийному ремонту оборудования обратитесь к ведущим специалистам компании DENIS CIMAF прямо сегодня.</p>
+                    <p class="servisText">Если нет возможности доставить оборудование в специализированный сервисный центр, Вы можете воспользоваться выездным обслуживанием. Мы предлагаем полный спектр услуг, оказываемых профессионально и оперативно.</p>
+                    <p class="servisText">Мы придерживаемся высочайших стандартов качества.</p>
+                    <p class="servisText">
+                        <span class="servisTextAbout">СЕРВИСНАЯ СЛУЖБА: <a href="tel:8412248444">Тел.: (4812) 248-444</a> E-mail: parts@madrog.ru</span>
+                    </p>
+                </div>
+                <div class="servisForm">
+                    <div class="popup-request-visible">
+                        <div class="popupRequsetVisible">
+                            <h2 class="title">ЗАЯВКА В СЕРВИСНЫЙ ЦЕНТР</h2>
+                            <input type="text" class="contactUser" placeholder="Организация">
+                            <input type="text" class="contactUser" placeholder="Оборудование">
+                            <input type="text" class="contactUser" placeholder="E-mail">
+                            <textarea name="comment" id="comm" cols="" rows="3" class="contactUser"></textarea>
+                            <button class="buttonInPopups">Отправить</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer data-role="footer" id="footer"></footer>
+<!-- Popups -->
+<div class="popup-request">
+    <div class="popup-requestQuote">
+        <div class="closeBtn">
+            <span>&#10006;</span>
+        </div>
+        <h2 class="title">Запрос стоимости</h2>
+        <p class="curretnSlide">Мульчеры фронтальные DAF</p>
+        <input type="text" class="contactUser" placeholder="Организация">
+        <input type="text" class="contactUser" placeholder="Оборудование">
+        <input type="text" class="contactUser" placeholder="Контактное лицо">
+        <input type="text" class="contactUser" placeholder="E-mail">
+        <textarea name="comment" id="comm" cols="10" rows="3" class="contactUser"></textarea>
+        <button class="buttonInPopups">Отправить</button>
+    </div>
+</div>
+<div class="popup-phone">
+    <div class="popup-phoneCallback">
+        <div class="closeBtn">
+            &#10006;
+        </div>
+        <h2 class="title">Заказать обратный звонок</h2>
+        <span class="number"><img src="img/phoneIcon.svg" alt="Телефон">&nbsp;8 800 505 58 12</span>
+        <input type="text" class="contactUser" placeholder="Ваше имя">
+        <input type="text" id="phone-number" class="contactUser" placeholder="Ваш телефон">
+        <textarea name="comment" id="comm" cols="15" rows="3" class="contactUser"></textarea>
+        <button class="buttonInPopups">Отправить</button>
+    </div>
+</div>
+<script src="js/jquery.maskedinput.js"></script>
+<script src="js/script.js"></script>
+<script>
+    // By default, swipe is enabled.
+    $('section').horizon();
+    // If you do not want to include another plugin, TouchSwipe, you can set it to false in the default options by passing in the option as false.
+    //$('section').horizon({swipe: false});
+    $(document).on('click', '.go-to-2', function () {
+        $(document).horizon('scrollTo', 'section-section2');
+    });
+</script>         
+</body>
+</html>

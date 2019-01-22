@@ -438,6 +438,10 @@ textarea {
   column-count: 1;
   column-width: 10rem;
 }
+.container .servisBlock .servisTextBlock .servisTextAbout {
+  font-weight: 500;
+  font-size: 1.25rem;
+}
 
 @media screen and (max-width: 1368px) {
   .popup-requestQuote,
