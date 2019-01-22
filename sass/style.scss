@@ -203,6 +203,12 @@ main{
 			.servisTextAbout{
 				font-weight: 500;
 				font-size: 	1.25rem;
+				a{
+					color: #fff;
+					&:hover{
+						color: $yellowColor;
+					}
+				}
 			}
 		}
 	}

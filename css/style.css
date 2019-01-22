@@ -442,6 +442,12 @@ textarea {
   font-weight: 500;
   font-size: 1.25rem;
 }
+.container .servisBlock .servisTextBlock .servisTextAbout a {
+  color: #fff;
+}
+.container .servisBlock .servisTextBlock .servisTextAbout a:hover {
+  color: #FBBA04;
+}
 
 @media screen and (max-width: 1368px) {
   .popup-requestQuote,
