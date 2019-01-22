@@ -4,6 +4,10 @@
   height: 100vh;
 }
 
+main {
+  display: contents !important;
+}
+
 html,
 body {
   width: 100%;
@@ -41,6 +45,7 @@ header {
   display: flex !important;
   justify-content: space-between;
   align-items: center;
+  z-index: 3;
 }
 header nav {
   transform: translateY(50%);
@@ -85,11 +90,20 @@ section {
 }
 
 #section-section1 {
-  background: url("../img/MDAF.jpg") no-repeat center rgba(0, 0, 0, 0.5);
-  z-index: 1;
+  background: url("../img/MDAF.jpg") no-repeat center;
   background-size: cover;
   color: #fff;
   display: flex;
+}
+#section-section1:after {
+  content: '';
+  background: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
 }
 
 #section-section2 {
@@ -200,8 +214,6 @@ textarea {
 .menu {
   display: flex;
   justify-content: space-between;
-  align-content: center;
-  align-items: center;
 }
 
 .header-nav-call,
@@ -248,12 +260,6 @@ textarea {
   color: #FBBA04;
 }
 
-.shadow-block {
-  background: url("../img/shadow.jpg") no-repeat center;
-  background-size: cover;
-  height: 100%;
-}
-
 .number {
   color: #FBBA04;
   border: none;
@@ -263,6 +269,7 @@ textarea {
 
 .container {
   margin-bottom: 2.5rem;
+  z-index: 2;
 }
 .container .text-block {
   height: 100%;
@@ -293,6 +300,7 @@ textarea {
   padding-left: 3rem;
   position: fixed;
   top: 45%;
+  z-index: 2;
 }
 .section-menu .vertical {
   display: flex;
