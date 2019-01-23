@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,10 +23,10 @@
     <nav class="menu">
         <ul>
             <li>
-                <a href="index.html"><span><img src="img/logo.svg" alt="Лого"></span></a>
+                <a href="index.html" class="header-active"><span><img src="img/logo.svg" alt="Лого"></span></a>
             </li>
             <li>
-                <a href="index.html" class="header-active"><span>Каталог</span></a>
+                <a href="index.html"><span>Каталог</span></a>
             </li>
             <li>
                 <a href="servis.html"><span>Обслуживание</span></a>
@@ -48,64 +47,17 @@
     </nav>   
 </header>
 <main>
-    <div class="horizon-prev"><img src="images/l-arrow.png"></div>
-    <div class="horizon-next"><img src="images/r-arrow.png"></div>
-    <div class="section-menu">
-        <nav class="vertical">
-            <ul>
-                <li><a class="active-slide" href="#section-section1">DAH</a></li>
-                <li><a href="#section-section2">DAF</a></li>
-                <li><a href="#section-section3">AFD</a></li>
-                <li><a href="#section-section4">FAD</a></li>
-                <li><a href="#section-section5">ADF</a></li>
-                <li><a href="#section-section6">FDA</a></li>
-            </ul>
-        </nav>
-    </div>
-    <section data-role="section" id="section-section1">
-        <div class="container">
-            <div class="text-block">
-                <h1 class="title">Фронтальные мульчеры  DAH</h1>
-                <p class="description">Максимально эффективная расчистка больших территорий</p>
-                <div class="button-block">
-                    <div class="col-auto">
-                        <button class="button-application">
-                            Заявка
-                        </button>
-                    </div>
-                    <div class="col-auto offset-1">
-                        <button class="button-description">
-                            Описание
-                        </button>
-                    </div>
-                </div>
-            </div>
+    <section class="details">
+        <div class="detDescript">
+            
+        </div>
+        <div class="parametrs">
+            
+        </div>
+        <div class="galery">
+            
         </div>
     </section>
-    <section data-role="section" id="section-section2">
-        <div class="container">
-            <div class="text-block">
-                <h1 class="title">Фронтальные мульчеры  DAF</h1>
-                <p class="description">Максимально эффективная расчистка больших территорий</p>
-                <div class="button-block">
-                    <div class="col-auto">
-                        <button class="button-application">
-                            Заявка
-                        </button>
-                    </div>
-                    <div class="col-auto offset-1">
-                        <button class="button-description">
-                            Описание
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section data-role="section" id="section-section3"></section>
-    <section data-role="section" id="section-section4"></section>
-    <section data-role="section" id="section-section5"></section>
-    <section data-role="section" id="section-section6"></section>
 </main>
 <footer data-role="footer" id="footer"></footer>
 <!-- Popups -->
@@ -147,7 +99,6 @@
     $(document).on('click', '.go-to-2', function () {
         $(document).horizon('scrollTo', 'section-section2');
     });
-</script>
-        
+</script>      
 </body>
 </html>

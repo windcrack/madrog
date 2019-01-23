@@ -8,6 +8,11 @@ main {
   display: contents !important;
 }
 
+.tube {
+  color: red;
+  display: inline-block;
+}
+
 html,
 body {
   width: 100%;
@@ -307,6 +312,7 @@ textarea {
   justify-content: flex-end;
   flex-direction: column;
   align-content: center;
+  transform: translateY(-1rem);
 }
 .container .text-block .button-block {
   display: flex;
@@ -401,7 +407,7 @@ textarea {
 }
 
 .servis {
-  background: url("../img/bgServis.jpg") no-repeat;
+  background: url("../img/bgServis.jpg") no-repeat center;
   background-size: cover;
   display: flex;
   justify-content: space-between;
@@ -449,6 +455,38 @@ textarea {
   color: #FBBA04;
 }
 
+.aboutAs {
+  background: url("../img/bgDensimov.jpg") no-repeat center;
+  display: flex;
+  justify-content: space-between;
+}
+.aboutAs:after {
+  content: '';
+  background-color: rgba(21, 21, 21, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.container .blockAbout {
+  display: flex;
+  justify-content: space-between;
+  margin: 10.375rem auto;
+}
+.container .blockAbout .contactMap {
+  width: 548px;
+  height: 460px;
+  frameborder: 0;
+  border: 0;
+  z-index: 3;
+}
+.container .blockAbout .aboutDescription {
+  column-width: 30rem;
+}
+
 @media screen and (max-width: 1368px) {
   .popup-requestQuote,
   .popup-phoneCallback
@@ -483,17 +521,25 @@ textarea {
   }
 
   .container .text-block {
-    transform: translateX(3%);
+    transform: translateX(3%) translateY(-1rem);
   }
 
   .container .blockContact,
-  .container .servisBlock {
+  .container .servisBlock,
+  .container .blockAbout {
     margin: 8.375rem auto;
   }
   .container .blockContact .servisTextBlock h2,
-  .container .servisBlock .servisTextBlock h2 {
+  .container .blockContact .aboutDescription h2,
+  .container .servisBlock .servisTextBlock h2,
+  .container .servisBlock .aboutDescription h2,
+  .container .blockAbout .servisTextBlock h2,
+  .container .blockAbout .aboutDescription h2 {
     font-size: 1.8rem;
     text-transform: uppercase;
+  }
+  .container .blockAbout .aboutDescription {
+    column-width: 55rem;
   }
 }
 

@@ -32,20 +32,26 @@
 	}
 	.container{
 		.text-block{
-			transform: translateX(3%);
+			transform: translateX(3%) translateY(-1rem);
 		}
 	}
 	.container{
 		.blockContact,
-		.servisBlock{
+		.servisBlock,
+		.blockAbout{
 			margin: 8.375rem auto;
-			.servisTextBlock{
+			.servisTextBlock,
+			.aboutDescription{
 				h2{
 					font-size: 1.8rem;
 					text-transform: uppercase;
 				}
 			}
-			
+		}
+		.blockAbout{
+			.aboutDescription{
+				column-width: 55rem;
+			}
 		}
 	}
 }

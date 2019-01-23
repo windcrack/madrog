@@ -9,6 +9,10 @@ $colorBlack: #151515;
 main{
 	display: contents !important;
 }
+.tube{
+	color: red; 
+	display: inline-block;
+}
 @import 'oldStyle';
 @import 'popups';
 
@@ -69,6 +73,7 @@ main{
 		justify-content: flex-end;
 		flex-direction: column;
 		align-content: center;
+		transform: translateY(-1rem);
 		.button-block{
 			display: flex;
 			justify-content: space-starts;
@@ -165,7 +170,7 @@ main{
 // Servis
 
 .servis{
-	background: url('../img/bgServis.jpg') no-repeat;
+	background: url('../img/bgServis.jpg') no-repeat center;
 	background-size: cover;
 	display: flex;
 	justify-content: space-between;
@@ -213,5 +218,38 @@ main{
 		}
 	}
 }
-
+// About
+.aboutAs{
+	background: url('../img/bgDensimov.jpg') no-repeat center;
+	display: flex;
+	justify-content: space-between;
+	&:after{
+		content: '';
+        background-color: rgba(21, 21, 21, 0.4);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+	}
+}
+.container{
+	.blockAbout{
+		display: flex;
+		justify-content: space-between;
+		margin: 10.375rem auto;
+		.contactMap{
+			width: 548px;
+			height: 460px;
+			frameborder:0;
+			border: 0;
+			z-index: 3;
+		}
+		.aboutDescription{
+			column-width: 30rem;
+		}
+	}
+}
+@import 'details';
 @import 'media';
