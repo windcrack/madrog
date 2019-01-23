@@ -23,6 +23,7 @@ main{
 
 .header-nav-call,
 .buttonInPopups,
+.buttonInDitales,
 .button-application,
 .button-description{
 	width: 270px;
@@ -55,6 +56,10 @@ main{
 	margin: 1rem auto;
 	cursor: pointer;
 	background: rgba(0, 0, 0, 0.5);
+}
+.buttonInDitales{
+	background-color: transparent;
+	transform: translateY(-8rem);
 }
 .header-active{
 	color: $yellowColor;
