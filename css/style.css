@@ -487,6 +487,63 @@ textarea {
   column-width: 30rem;
 }
 
+.details {
+  background: url("../img/bgDetails.jpg") no-repeat center 100%;
+  width: 100%;
+  display: flex;
+}
+.details:after {
+  content: '';
+  background: rgba(21, 21, 21, 0.75);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.details h2.headerDet {
+  font-size: 2.25rem;
+  margin-top: 10.375rem;
+}
+.details .detDescript {
+  color: #FFF;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10.375rem;
+}
+.details .detDescript .title {
+  color: #FBBA04;
+}
+.details .detDescript .detImg {
+  width: 667px;
+  height: 500px;
+  transform: translateY(0.5rem);
+}
+.details .detDescript .detText {
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 480px;
+  font-size: 0.875rem;
+  column-count: 1;
+  column-width: 500px;
+  transform: translateX(1rem);
+}
+.details .detDescript .detText .param {
+  margin-bottom: 0;
+}
+.details .detDescript .detText .param:last-child {
+  margin-bottom: 1;
+}
+.details .detDescript .detText ul {
+  list-style-type: none;
+}
+
+.parametrs,
+.galery {
+  display: none;
+}
+
 @media screen and (max-width: 1368px) {
   .popup-requestQuote,
   .popup-phoneCallback
@@ -540,6 +597,10 @@ textarea {
   }
   .container .blockAbout .aboutDescription {
     column-width: 55rem;
+  }
+
+  .details h2.headerDet {
+    margin-top: 5.375rem;
   }
 }
 
