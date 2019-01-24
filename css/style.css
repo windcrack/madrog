@@ -592,9 +592,18 @@ textarea {
   z-index: 2;
   margin: 15%;
 }
-.details .mainBlockParamets .tableParam {
-  display: flex;
-  align-items: center;
+.details .mainBlockParamets .mainTable {
+  margin: 1rem 0;
+}
+.details .mainBlockParamets .mainTableHead {
+  margin: 1rem 0;
+  color: #FBBA04;
+}
+.details .mainBlockParamets .blockTable {
+  padding: 1.875rem 0;
+}
+.details .mainBlockParamets .blockTable:hover {
+  background: rgba(251, 227, 4, 0.6);
 }
 
 .mainBlockDetails,
