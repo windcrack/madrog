@@ -497,7 +497,7 @@ textarea {
   position: absolute;
   right: 3.125rem;
   top: 8.125rem;
-  z-index: 2;
+  z-index: 5;
 }
 .changeBlock ul {
   list-style-type: none;
@@ -525,6 +525,7 @@ textarea {
 }
 .details .contentBlock {
   z-index: 2;
+  display: flex;
 }
 .details .mainBlockDetails {
   max-width: 1550px;

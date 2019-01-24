@@ -2,7 +2,7 @@
 	position: absolute;
 	right: 3.125rem;
 	top: 8.125rem;
-	z-index: 2;
+	z-index: 5;
 	ul{
 		list-style-type: none;
 		li{
@@ -29,8 +29,8 @@
 	}
 	.contentBlock{
 		z-index: 2;
+		display: flex;
 	}
-	
 	// first block
 	.mainBlockDetails{
 		max-width: 1550px;
