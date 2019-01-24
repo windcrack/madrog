@@ -527,11 +527,10 @@ textarea {
   max-width: 1550px;
   z-index: 2;
   flex-direction: column;
-  margin: 0 auto;
+  margin: 10.375rem auto;
 }
 .details .mainBlockDetails h2.headerDet {
   font-size: 2.25rem;
-  margin-top: 10.375rem;
 }
 .details .mainBlockDetails .detDescript {
   color: #FFF;
@@ -590,10 +589,13 @@ textarea {
   height: 70vh;
   width: 70vw;
   z-index: 2;
-  margin: 15%;
+  margin: 5.375rem auto;
 }
 .details .mainBlockParamets .mainTable {
   margin: 1rem 0;
+}
+.details .mainBlockParamets .mainTable:hover {
+  background: rgba(251, 227, 4, 0.6);
 }
 .details .mainBlockParamets .mainTableHead {
   margin: 1rem 0;
@@ -603,7 +605,7 @@ textarea {
   padding: 1.875rem 0;
 }
 .details .mainBlockParamets .blockTable:hover {
-  background: rgba(251, 227, 4, 0.6);
+  color: #000;
 }
 
 .mainBlockDetails,
@@ -668,15 +670,20 @@ textarea {
 
   .details .mainBlockDetails {
     max-width: 1024px;
-  }
-  .details .mainBlockDetails h2.headerDet {
-    margin-top: 5.375rem;
+    margin: 5.375rem auto;
   }
   .details .mainBlockDetails .detDescript .detText {
     height: 380px;
   }
   .details .mainBlockGalery .slides {
     margin-left: -1.625rem;
+  }
+  .details .mainBlockParamets {
+    max-width: 1024px;
+    margin: 5.375rem auto;
+  }
+  .details .mainBlockParamets .blockTable {
+    padding: 0.625rem 0;
   }
 
   .btnBlock {

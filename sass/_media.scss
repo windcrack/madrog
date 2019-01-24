@@ -57,8 +57,9 @@
 	.details{
 		.mainBlockDetails{
 			max-width: 1024px;
+			margin: 5.375rem auto;
 			h2.headerDet{
-				margin-top: 5.375rem;
+				
 			}
 			.detDescript{
 				.detText{
@@ -69,6 +70,13 @@
 		.mainBlockGalery{
 			.slides{
 				margin-left: -1.625rem;
+			}
+		}
+		.mainBlockParamets{
+			max-width: 1024px;
+			margin: 5.375rem auto;
+			.blockTable{
+				padding: 0.625rem 0;
 			}
 		}
 	}
