@@ -75,7 +75,7 @@
 	}
 	// second block
 	.mainBlockGalery{
-		display: flex;
+		// display: flex;
 		max-width: 1550px;
 		z-index: 2;
 		// margin: 0 auto;
@@ -96,9 +96,19 @@
 			}
 		}
 	}
+	.mainBlockParamets{
+		height: 70vh;
+		width: 70vw;
+		z-index: 2;
+		margin: 15%;
+		.tableParam{
+			display: flex;
+			align-items: center;
+		}
+	}
 }
 
 .mainBlockDetails,
-.galery{
+.mainBlockGalery{
 	display: none;
 }

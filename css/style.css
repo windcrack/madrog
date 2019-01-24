@@ -567,7 +567,6 @@ textarea {
   list-style-type: none;
 }
 .details .mainBlockGalery {
-  display: flex;
   max-width: 1550px;
   z-index: 2;
 }
@@ -587,9 +586,19 @@ textarea {
 .details .mainBlockGalery .slides ul li {
   padding-bottom: 1rem;
 }
+.details .mainBlockParamets {
+  height: 70vh;
+  width: 70vw;
+  z-index: 2;
+  margin: 15%;
+}
+.details .mainBlockParamets .tableParam {
+  display: flex;
+  align-items: center;
+}
 
 .mainBlockDetails,
-.galery {
+.mainBlockGalery {
   display: none;
 }
 
