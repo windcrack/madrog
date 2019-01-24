@@ -55,8 +55,24 @@
 		}
 	}
 	.details{
-		h2.headerDet{
-			margin-top: 5.375rem;
+		.mainBlockDetails{
+			max-width: 1024px;
+			h2.headerDet{
+				margin-top: 5.375rem;
+			}
+			.detDescript{
+				.detText{
+					height: 380px;
+				}
+			}
 		}
+	}
+	.btnBlock{
+		width: 270px;
+		height: 53px;
+	}
+	.buttonInDitales{
+		transform: translateY(-15rem);
+		// margin-bottom: 14rem;
 	}
 }
