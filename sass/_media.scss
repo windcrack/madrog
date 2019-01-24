@@ -66,6 +66,11 @@
 				}
 			}
 		}
+		.mainBlockGalery{
+			.slides{
+				margin-left: -1.625rem;
+			}
+		}
 	}
 	.btnBlock{
 		width: 270px;
@@ -73,6 +78,5 @@
 	}
 	.buttonInDitales{
 		transform: translateY(-15rem);
-		// margin-bottom: 14rem;
 	}
 }

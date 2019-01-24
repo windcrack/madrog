@@ -493,8 +493,21 @@ textarea {
   column-width: 30rem;
 }
 
+.changeBlock {
+  position: absolute;
+  right: 3.125rem;
+  top: 8.125rem;
+  z-index: 2;
+}
+.changeBlock ul {
+  list-style-type: none;
+}
+.changeBlock ul li {
+  padding-bottom: 1rem;
+}
+
 .details {
-  background: url("../img/bgDetails.jpg") no-repeat center 100%;
+  background: url("../img/bgDetails.jpg") no-repeat center;
   background-size: cover;
   width: 100%;
   display: flex;
@@ -513,7 +526,6 @@ textarea {
 .details .mainBlockDetails {
   max-width: 1550px;
   z-index: 2;
-  display: flex;
   flex-direction: column;
   margin: 0 auto;
 }
@@ -554,8 +566,29 @@ textarea {
 .details .mainBlockDetails .detDescript .detText ul {
   list-style-type: none;
 }
+.details .mainBlockGalery {
+  display: flex;
+  max-width: 1550px;
+  z-index: 2;
+}
+.details .mainBlockGalery .imgBlock {
+  height: 100vh;
+  width: 71vw;
+}
+.details .mainBlockGalery .slides {
+  margin-top: 7.75rem;
+  margin-left: 5.375rem;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.details .mainBlockGalery .slides ul {
+  list-style-type: none;
+}
+.details .mainBlockGalery .slides ul li {
+  padding-bottom: 1rem;
+}
 
-.parametrs,
+.mainBlockDetails,
 .galery {
   display: none;
 }
@@ -623,6 +656,9 @@ textarea {
   }
   .details .mainBlockDetails .detDescript .detText {
     height: 380px;
+  }
+  .details .mainBlockGalery .slides {
+    margin-left: -1.625rem;
   }
 
   .btnBlock {
