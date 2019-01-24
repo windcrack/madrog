@@ -11,9 +11,6 @@
 	}
 }
 
-.contentBlock{
-	z-index: 2;
-}
 .details{
 	background: url('../img/bgDetails.jpg') no-repeat center;
 	background-size: cover;
@@ -29,6 +26,9 @@
         right: 0;
         bottom: 0;
         z-index: 1;
+	}
+	.contentBlock{
+		z-index: 2;
 	}
 	
 	// first block

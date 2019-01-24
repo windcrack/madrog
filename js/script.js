@@ -18,6 +18,7 @@ $(document).ready(function(){
 	}
 	changeBlock.addEventListener('click', e => {
 		let target = e.target;
+			console.log(target);
 		if (target && target.classList.contains('changeContent')) {
 			for(let i = 0; i < change.length; i++){
 				if(target == change[i]){

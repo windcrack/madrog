@@ -506,10 +506,6 @@ textarea {
   padding-bottom: 1rem;
 }
 
-.contentBlock {
-  z-index: 2;
-}
-
 .details {
   background: url("../img/bgDetails.jpg") no-repeat center;
   background-size: cover;
@@ -526,6 +522,9 @@ textarea {
   right: 0;
   bottom: 0;
   z-index: 1;
+}
+.details .contentBlock {
+  z-index: 2;
 }
 .details .mainBlockDetails {
   max-width: 1550px;
