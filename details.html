@@ -49,13 +49,13 @@
 <main>
     <div class="changeBlock">
         <ul>
-            <li><a href="#"><img src="img/mainFrame.svg" alt="Характеристики"></a></li>
-            <li><a href="#"><img src="img/galeryFrame.svg" alt="Галерея"></a></li>
-            <li><a href="#"><img src="img/tableFrame.svg" alt="Таблица"></a></li>
+            <li><a href="#" class="changeContent"><img src="img/mainFrame.svg" alt="Характеристики"></a></li>
+            <li><a href="#" class="changeContent"><img src="img/galeryFrame.svg" alt="Галерея"></a></li>
+            <li><a href="#" class="changeContent"><img src="img/tableFrame.svg" alt="Таблица"></a></li>
         </ul>
     </div>
     <section class="details">
-        <div class="mainBlockDetails">
+        <div class="mainBlockDetails contentDesc">
             <h2 class="headerDet">Фронтальные мульчеры  DAF</h2>
             <div class="detDescript">
                 <div class="detImg">
@@ -88,7 +88,7 @@
                 </button>
             </div>
         </div>
-        <div class="mainBlockGalery">
+        <div class="mainBlockGalery contentDesc">
             <div class="imgBlock">
                 <img src="img/mainScreen.jpg" alt="Картинка из слайдера">
             </div> 
@@ -102,7 +102,7 @@
                 </ul>
             </div>
         </div>
-        <div class="mainBlockParamets">
+        <div class="mainBlockParamets contentDesc">
             <div class="row mainTableHead">
                 <div class="col-7 text-left blockTable pl-2">name</div>
                 <div class="col-1 text-center blockTable">prod1</div>
@@ -201,7 +201,6 @@
     </div>
 </div>
 <script src="js/jquery.maskedinput.js"></script>
-<script src="js/script.js"></script>
 <script>
     // By default, swipe is enabled.
     // $('section').horizon();
@@ -210,6 +209,7 @@
     $(document).on('click', '.go-to-2', function () {
         $(document).horizon('scrollTo', 'section-section2');
     });
-</script>      
+</script> 
+<script src="js/script.js"></script>    
 </body>
 </html>

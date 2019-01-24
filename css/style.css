@@ -506,6 +506,10 @@ textarea {
   padding-bottom: 1rem;
 }
 
+.contentBlock {
+  z-index: 2;
+}
+
 .details {
   background: url("../img/bgDetails.jpg") no-repeat center;
   background-size: cover;
@@ -526,6 +530,7 @@ textarea {
 .details .mainBlockDetails {
   max-width: 1550px;
   z-index: 2;
+  display: flex;
   flex-direction: column;
   margin: 10.375rem auto;
 }
@@ -534,7 +539,6 @@ textarea {
 }
 .details .mainBlockDetails .detDescript {
   color: #FFF;
-  display: flex;
   justify-content: space-between;
   margin-bottom: 10.375rem;
 }
@@ -566,6 +570,7 @@ textarea {
   list-style-type: none;
 }
 .details .mainBlockGalery {
+  display: flex;
   max-width: 1550px;
   z-index: 2;
 }
@@ -589,7 +594,7 @@ textarea {
   height: 70vh;
   width: 70vw;
   z-index: 2;
-  margin: 5.375rem auto;
+  margin: 6.375rem auto;
 }
 .details .mainBlockParamets .mainTable {
   margin: 1rem 0;
@@ -607,10 +612,13 @@ textarea {
 .details .mainBlockParamets .blockTable:hover {
   color: #000;
 }
-
-.mainBlockDetails,
-.mainBlockGalery {
+.details .showDes {
+  display: flex;
+  z-index: 2;
+}
+.details .hideDes {
   display: none;
+  z-index: 2;
 }
 
 @media screen and (max-width: 1368px) {

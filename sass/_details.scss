@@ -11,6 +11,9 @@
 	}
 }
 
+.contentBlock{
+	z-index: 2;
+}
 .details{
 	background: url('../img/bgDetails.jpg') no-repeat center;
 	background-size: cover;
@@ -27,11 +30,12 @@
         bottom: 0;
         z-index: 1;
 	}
+	
 	// first block
 	.mainBlockDetails{
 		max-width: 1550px;
 		z-index: 2;
-		// display: flex;
+		display: flex;
 		flex-direction: column;
 		margin: 10.375rem auto;
 		h2.headerDet{
@@ -39,7 +43,7 @@
 		}
 		.detDescript{
 			color: #FFF;
-			display: flex;
+			// display: flex;
 			justify-content: space-between;
 			margin-bottom: 10.375rem;
 			.title{
@@ -74,10 +78,9 @@
 	}
 	// second block
 	.mainBlockGalery{
-		// display: flex;
+		display: flex;
 		max-width: 1550px;
 		z-index: 2;
-		// margin: 0 auto;
 		.imgBlock{
 			height: 100vh;
 			width: 71vw;
@@ -100,7 +103,7 @@
 		height: 70vh;
 		width: 70vw;
 		z-index: 2;
-		margin: 5.375rem auto;
+		margin: 6.375rem auto;
 		.mainTable{
 			margin: 1rem 0;
 			&:hover{
@@ -118,9 +121,12 @@
 			}
 		}
 	}
-}
-
-.mainBlockDetails,
-.mainBlockGalery{
-	display: none;
+	.showDes{
+		display: flex;
+		z-index: 2
+	}
+	.hideDes{
+		display: none;
+		z-index: 2
+	}
 }
