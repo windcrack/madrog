@@ -555,15 +555,13 @@ textarea {
   width: 667px;
   height: 500px;
   transform: translateY(0.5rem);
-  margin-right: 5rem;
 }
 .details .mainBlockDetails .detDescript .detText {
   overflow: scroll;
   overflow-x: hidden;
   height: 480px;
   font-size: 0.875rem;
-  column-count: 1;
-  column-width: 600px;
+  width: 600px;
   transform: translateX(1rem);
 }
 .details .mainBlockDetails .detDescript .detText .param {
@@ -574,6 +572,40 @@ textarea {
 }
 .details .mainBlockDetails .detDescript .detText ul {
   list-style-type: none;
+}
+.details .mainBlockDetails .detDescript .detText::-webkit-scrollbar {
+  width: 6px;
+  height: 20px;
+}
+.details .mainBlockDetails .detDescript .detText::-webkit-scrollbar-button:start:decrement,
+.details .mainBlockDetails .detDescript .detText ::-webkit-scrollbar-button:end:increment {
+  height: 20px;
+  width: 20px;
+  display: block;
+  background-color: transparent;
+}
+.details .mainBlockDetails .detDescript .detText::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+  -webkit-border-radius: 5px;
+}
+.details .mainBlockDetails .detDescript .detText::-webkit-scrollbar-thumb:vertical {
+  height: 50px;
+  background-color: rgba(251, 227, 4, 0.6);
+  border: none;
+  -webkit-border-radius: 50px;
+  opacity: 0.6;
+}
+.details .mainBlockDetails .detDescript .detText::-webkit-scrollbar-thumb:vertical:hover {
+  background-color: #fbe304;
+}
+.details .mainBlockDetails .detDescript .detText::-webkit-scrollbar-thumb:horizontal {
+  height: 50px;
+  background-color: #474747;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 6px;
+}
+.details .mainBlockDetails .detDescript .detText::-webkit-scrollbar-corner {
+  background-color: #474747;
 }
 .details .mainBlockGalery {
   display: flex;
@@ -595,6 +627,40 @@ textarea {
 }
 .details .mainBlockGalery .slides ul li {
   padding-bottom: 1rem;
+}
+.details .mainBlockGalery .slides::-webkit-scrollbar {
+  width: 6px;
+  height: 20px;
+}
+.details .mainBlockGalery .slides::-webkit-scrollbar-button:start:decrement,
+.details .mainBlockGalery .slides ::-webkit-scrollbar-button:end:increment {
+  height: 20px;
+  width: 20px;
+  display: block;
+  background-color: transparent;
+}
+.details .mainBlockGalery .slides::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+  -webkit-border-radius: 5px;
+}
+.details .mainBlockGalery .slides::-webkit-scrollbar-thumb:vertical {
+  height: 50px;
+  background-color: rgba(251, 227, 4, 0.6);
+  border: none;
+  -webkit-border-radius: 50px;
+  opacity: 0.6;
+}
+.details .mainBlockGalery .slides::-webkit-scrollbar-thumb:vertical:hover {
+  background-color: #fbe304;
+}
+.details .mainBlockGalery .slides::-webkit-scrollbar-thumb:horizontal {
+  height: 50px;
+  background-color: #474747;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 6px;
+}
+.details .mainBlockGalery .slides::-webkit-scrollbar-corner {
+  background-color: #474747;
 }
 .details .mainBlockParamets {
   height: 70vh;
