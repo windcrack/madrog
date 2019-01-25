@@ -16,17 +16,20 @@ $(document).ready(function(){
 			content[s].classList.add('showDes');
 		}
 	}
-	changeBlock.addEventListener('click', e => {
-		let target = e.target;
-		if (target && target.classList.contains('changeContent')) {
-			for(let i = 0; i < change.length; i++){
-				if(target == change[i]){
-					hideContent(0);
-					showContent(i);
+	if(changeBlock !== null){
+		changeBlock.addEventListener('click', e => {
+			let target = e.target;
+			if (target && target.classList.contains('changeContent')) {
+				for(let i = 0; i < change.length; i++){
+					if(target == change[i]){
+						hideContent(0);
+						showContent(i);
+					}
 				}
 			}
-		}
-	});
+		});
+	}
+	
 	$(() =>{
 		$('#phone-number').mask('+7(999) 999-99-99');
 	});

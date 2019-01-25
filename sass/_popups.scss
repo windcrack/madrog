@@ -11,7 +11,7 @@
 	border-radius: 5px;
 	color: $yellowColor;
 	background: rgba(196, 196, 196, 0.1);
-	margin: 0.5rem;
+	margin: 0.5rem auto;
 }
 input[type=text],
 textarea{
@@ -63,7 +63,7 @@ textarea{
 	flex-direction: column;
 	justify-content: space-around;
 	z-index: 2;
-	margin: auto;
+	// margin: auto;
 	.popupRequsetVisible{
 		display:flex;
 		justify-content: space-between;
