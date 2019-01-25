@@ -459,6 +459,22 @@ textarea {
 }
 .container .servisBlock .servisTextBlock .servisTextAbout a:hover {
   color: #FBBA04;
+  text-decoration: none;
+}
+.container .servisBlock .servisTextBlock .servisTextAbout a .effect-3 {
+  display: inline-block;
+  overflow: hidden;
+}
+.container .servisBlock .servisTextBlock .servisTextAbout a .effect-3:before {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #FBBA04;
+  transform: translateX(-100%);
+}
+.container .servisBlock .servisTextBlock .servisTextAbout a .effect-3:hover:before {
+  transform: translateX(0);
 }
 
 .aboutAs {
