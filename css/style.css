@@ -523,9 +523,14 @@ textarea {
   bottom: 0;
   z-index: 1;
 }
-.details .contentBlock {
+.details .contentDesc {
   z-index: 2;
   display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+.details .contentDesc:nth-child(2) {
+  margin: 0;
 }
 .details .mainBlockDetails {
   max-width: 1550px;
@@ -539,6 +544,7 @@ textarea {
 }
 .details .mainBlockDetails .detDescript {
   color: #FFF;
+  display: flex;
   justify-content: space-between;
   margin-bottom: 10.375rem;
 }

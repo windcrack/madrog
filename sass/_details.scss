@@ -27,9 +27,14 @@
         bottom: 0;
         z-index: 1;
 	}
-	.contentBlock{
+	.contentDesc{
 		z-index: 2;
 		display: flex;
+		justify-content: space-between;
+		margin: auto;
+		&:nth-child(2){
+			margin: 0;
+		}
 	}
 	// first block
 	.mainBlockDetails{
@@ -43,7 +48,7 @@
 		}
 		.detDescript{
 			color: #FFF;
-			// display: flex;
+			display: flex;
 			justify-content: space-between;
 			margin-bottom: 10.375rem;
 			.title{
