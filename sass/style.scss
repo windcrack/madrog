@@ -20,6 +20,15 @@ main{
 .menu{
 	display: flex;
 	justify-content: space-between;
+	ul{
+		li{
+			a{
+				&:hover{
+					color: $yellowColor;
+				}
+			}
+		}
+	}
 }
 
 .header-nav-call,
@@ -166,6 +175,7 @@ main{
 					color: #fff;
 					&:hover{
 						color: $yellowColor;
+						text-decoration: none;
 					}
 				}
 			}

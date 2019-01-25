@@ -57,7 +57,7 @@ textarea{
 }
 // Видимая
 .popup-request-visible{
-	width: 402px;
+	width: 602px;
 	background: transparent;
 	display: flex;
 	flex-direction: column;
@@ -83,5 +83,12 @@ textarea{
 	}
 	.curretnSlide{
 		font-size: 1.125rem;
+	}
+	.contactUser{
+		border: solid 1px $yellowColor;
+		border-radius: 5px;
+		color: $yellowColor;
+		background: rgba(196, 196, 196, 0.1);
+		margin: 0.5rem;
 	}
 }

@@ -217,7 +217,7 @@ textarea {
 }
 
 .popup-request-visible {
-  width: 402px;
+  width: 602px;
   background: transparent;
   display: flex;
   flex-direction: column;
@@ -244,10 +244,20 @@ textarea {
 .popup-request-visible .curretnSlide {
   font-size: 1.125rem;
 }
+.popup-request-visible .contactUser {
+  border: solid 1px #FBBA04;
+  border-radius: 5px;
+  color: #FBBA04;
+  background: rgba(196, 196, 196, 0.1);
+  margin: 0.5rem;
+}
 
 .menu {
   display: flex;
   justify-content: space-between;
+}
+.menu ul li a:hover {
+  color: #FBBA04;
 }
 
 .header-nav-call,
@@ -409,6 +419,7 @@ textarea {
 }
 .container .blockContact .contactDescription .descText a:hover {
   color: #FBBA04;
+  text-decoration: none;
 }
 
 .servis {
@@ -776,6 +787,9 @@ textarea {
   }
   .container .blockAbout .aboutDescription {
     line-height: 1.3;
+  }
+  .container .servisBlock .servisTextBlock p.servisText {
+    line-height: 1;
   }
 
   .details .mainBlockDetails {
