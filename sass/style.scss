@@ -278,7 +278,15 @@ main{
 			z-index: 3;
 		}
 		.aboutDescription{
-			column-width: 30rem;
+			width: 34.25rem;
+			line-height: 1.8;
+			h2{
+				text-transform: uppercase;
+			}
+			
+		}
+		.aboutMap{
+			text-transform: uppercase;
 		}
 	}
 }

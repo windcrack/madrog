@@ -37,20 +37,19 @@
 	}
 	.container{
 		.blockContact,
-		.servisBlock,
-		.blockAbout{
+		.servisBlock{
 			margin: 8.375rem auto;
 			.servisTextBlock,
 			.aboutDescription{
 				h2{
 					font-size: 1.8rem;
-					text-transform: uppercase;
 				}
 			}
 		}
 		.blockAbout{
+			margin: 6rem auto;
 			.aboutDescription{
-				column-width: 55rem;
+				line-height: 1.3;
 			}
 		}
 	}
