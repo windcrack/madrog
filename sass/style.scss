@@ -1,11 +1,6 @@
 // Старый css
 $yellowColor: #FBBA04;
 $colorBlack: #151515;
-.block-shadow{
-	background: url('../img/shadow.jpg') no-repeat center;
-	z-index: 2;
-	height: 100vh;
-}
 
 main{
 	display: contents !important;
@@ -47,19 +42,9 @@ main{
 	background: url('../img/phoneBtn.svg') left 5% center no-repeat rgba(0, 0, 0, 0.5);
 }
 .button-application{
-	-webkit-transform: translateY(40%) translateX(-70%);
-	-ms-transform: translateY(40%) translateX(-70%);
-	-o-transform: translateY(40%) translateX(-70%);
-	-moz-transform: translateY(40%) translateX(-70%);
-	transform: translateY(40%) translateX(-70%);
 	background: url('../img/appBtn.svg') left 5% center no-repeat rgba(0, 0, 0, 0.5);
 }
 .button-description{
-	-webkit-transform: translateY(40%) translateX(-70%);
-	-ms-transform: translateY(40%) translateX(-70%);
-	-o-transform: translateY(40%) translateX(-70%);
-	-moz-transform: translateY(40%) translateX(-70%);
-	transform: translateY(40%) translateX(-70%);
 	background: url('../img/descBtn.svg') left 5% center no-repeat rgba(0, 0, 0, 0.5);
 }
 .buttonInPopups{
@@ -92,7 +77,7 @@ main{
 		.button-block{
 			display: flex;
 			justify-content: space-starts;
-			transform: translateY(-40%) translateX(5%);
+			transform: translateY(0%) translateX(-1rem);
 		}
 		h1.title{
 			font-weight: bold;
@@ -149,6 +134,7 @@ main{
 }
 .container{
 	margin: 0 auto;
+	max-width: 1500px !important;
 	.blockContact{
 		display: flex;
 		justify-content: space-between;
@@ -203,14 +189,17 @@ main{
 }
 .container{
 	color: #fff;
+	display: flex;
+	max-width: 1500px !important;
 	.servisBlock{
 		z-index: 2;
 		display: flex;
-		margin: 10.375rem auto;
+		margin: auto;
 		justify-content: space-between;
 		.servisForm{
 			display: flex;
 			flex-direction: column;
+			justify-content: center;
 			form{
 				width: 300px;
 				margin: 0 auto;
@@ -276,6 +265,7 @@ main{
 	}
 }
 .container{
+	max-width: 1500px !important;
 	.blockAbout{
 		display: flex;
 		justify-content: space-between;
