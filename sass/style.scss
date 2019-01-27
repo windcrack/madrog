@@ -38,7 +38,7 @@ main{
 	cursor: pointer;
 }
 .header-nav-call{
-	transform: translateY(-20%) translateX(50%);
+	transform: translateX(50%);
 	background: url('../img/phoneBtn.svg') left 5% center no-repeat rgba(0, 0, 0, 0.5);
 }
 .button-application{
@@ -51,10 +51,6 @@ main{
 	margin: 1rem auto;
 	cursor: pointer;
 	background: rgba(0, 0, 0, 0.5);
-}
-.buttonInDitales{
-	background-color: transparent;
-	transform: translateY(-8rem);
 }
 .header-active{
 	color: $yellowColor;

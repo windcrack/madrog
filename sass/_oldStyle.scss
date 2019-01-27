@@ -34,7 +34,7 @@ header {
     justify-content: space-between;
     align-items: center;
     nav {
-        transform: translateY(50%);
+        transform: translateY(20%);
     }
     ul {
         margin: 0;
@@ -61,7 +61,7 @@ header {
             }
             span {
                 position: relative;
-                top: 10%;
+                top: 30%;
                 transform: translateY(-30%);
                 display: inline-block;
             }
