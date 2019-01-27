@@ -304,8 +304,12 @@ textarea {
 .container {
   margin-bottom: 2.5rem;
   z-index: 2;
+  max-width: 1500px !important;
+  color: #fff;
+  display: flex;
 }
-.container .text-block {
+
+.text-block {
   height: 100%;
   display: flex;
   justify-content: flex-end;
@@ -313,16 +317,16 @@ textarea {
   align-content: center;
   transform: translateY(-1rem);
 }
-.container .text-block .button-block {
+.text-block .button-block {
   display: flex;
   justify-content: space-starts;
   transform: translateY(0%) translateX(-1rem);
 }
-.container .text-block h1.title {
+.text-block h1.title {
   font-weight: bold;
   font-size: 3.75rem;
 }
-.container .text-block p.description {
+.text-block p.description {
   font-size: 1.75rem;
   width: 32rem;
   font-weight: 600;
@@ -369,28 +373,26 @@ textarea {
   z-index: 1;
 }
 
-.container {
-  margin: 0 auto;
-  max-width: 1500px !important;
-}
-.container .blockContact {
+.blockContact {
   display: flex;
   justify-content: space-between;
-  margin: 10.375rem auto;
+  margin: auto;
 }
-.container .blockContact .contactMap {
+.blockContact .contactMap {
   width: 718px;
   height: 447px;
   frameborder: 0;
   border: 0;
   z-index: 3;
+  padding-right: 2rem;
 }
-.container .blockContact .contactDescription {
+.blockContact .contactDescription {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   z-index: 3;
 }
-.container .blockContact .contactDescription .descText {
+.blockContact .contactDescription .descText {
   column-count: 1;
   column-width: 310px;
   text-align: left;
@@ -399,10 +401,10 @@ textarea {
   color: #FFFFFF;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.container .blockContact .contactDescription .descText a {
+.blockContact .contactDescription .descText a {
   color: #fff;
 }
-.container .blockContact .contactDescription .descText a:hover {
+.blockContact .contactDescription .descText a:hover {
   color: #FBBA04;
   text-decoration: none;
 }
@@ -424,55 +426,50 @@ textarea {
   z-index: 1;
 }
 
-.container {
-  color: #fff;
-  display: flex;
-  max-width: 1500px !important;
-}
-.container .servisBlock {
+.servisBlock {
   z-index: 2;
   display: flex;
   margin: auto;
   justify-content: space-between;
 }
-.container .servisBlock .servisForm {
+.servisBlock .servisForm {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.container .servisBlock .servisForm form {
+.servisBlock .servisForm form {
   width: 300px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
 }
-.container .servisBlock .servisTextBlock {
+.servisBlock .servisTextBlock {
   width: 35.625rem;
 }
-.container .servisBlock .servisTextBlock h2 {
+.servisBlock .servisTextBlock h2 {
   font-size: 2.1875rem;
   text-transform: uppercase;
 }
-.container .servisBlock .servisTextBlock p.servisText {
+.servisBlock .servisTextBlock p.servisText {
   column-count: 1;
   column-width: 10rem;
 }
-.container .servisBlock .servisTextBlock .servisTextAbout {
+.servisBlock .servisTextBlock .servisTextAbout {
   font-weight: 500;
   font-size: 1.25rem;
 }
-.container .servisBlock .servisTextBlock .servisTextAbout a {
+.servisBlock .servisTextBlock .servisTextAbout a {
   color: #fff;
 }
-.container .servisBlock .servisTextBlock .servisTextAbout a:hover {
+.servisBlock .servisTextBlock .servisTextAbout a:hover {
   color: #FBBA04;
   text-decoration: none;
 }
-.container .servisBlock .servisTextBlock .servisTextAbout a .effect-3 {
+.servisBlock .servisTextBlock .servisTextAbout a .effect-3 {
   display: inline-block;
   overflow: hidden;
 }
-.container .servisBlock .servisTextBlock .servisTextAbout a .effect-3:before {
+.servisBlock .servisTextBlock .servisTextAbout a .effect-3:before {
   left: 0;
   bottom: 0;
   width: 100%;
@@ -480,7 +477,7 @@ textarea {
   background: #FBBA04;
   transform: translateX(-100%);
 }
-.container .servisBlock .servisTextBlock .servisTextAbout a .effect-3:hover:before {
+.servisBlock .servisTextBlock .servisTextAbout a .effect-3:hover:before {
   transform: translateX(0);
 }
 
@@ -500,30 +497,31 @@ textarea {
   z-index: 1;
 }
 
-.container {
-  max-width: 1500px !important;
-}
-.container .blockAbout {
+.blockAbout {
   display: flex;
   justify-content: space-between;
-  margin: 10.375rem auto;
+  margin: auto;
 }
-.container .blockAbout .contactMap {
+.blockAbout .contactMap {
   width: 548px;
   height: 460px;
   frameborder: 0;
   border: 0;
   z-index: 3;
 }
-.container .blockAbout .aboutDescription {
+.blockAbout .aboutDescription {
   width: 34.25rem;
   line-height: 1.8;
 }
-.container .blockAbout .aboutDescription h2 {
+.blockAbout .aboutDescription h2 {
   text-transform: uppercase;
 }
-.container .blockAbout .aboutMap {
+.blockAbout .aboutMap {
   text-transform: uppercase;
+  padding-left: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .changeBlock {
