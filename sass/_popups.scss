@@ -5,13 +5,14 @@
 .closeBtn{
 	color: $yellowColor;
 	align-self: end;
+	cursor: pointer;
 }
 .contactUser{
 	border: solid 1px $yellowColor;
 	border-radius: 5px;
 	color: $yellowColor;
 	background: rgba(196, 196, 196, 0.1);
-	margin: 0.5rem auto;
+	margin: 0.5rem 2rem;
 }
 input[type=text],
 textarea{
@@ -53,7 +54,7 @@ textarea{
 }
 .popup-requestQuote{
 	top: 41%;
-	left: 16%;
+	left: 11%;
 }
 // Видимая
 .popup-request-visible{
