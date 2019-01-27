@@ -46,6 +46,10 @@
 		h2.headerDet{
 			font-size: 	2.25rem;
 		}
+		.buttonInDitales{
+			background-color: transparent;
+			transform: translateY(-8rem);
+		}
 		.detDescript{
 			color: #FFF;
 			display: flex;
@@ -121,15 +125,14 @@
 	// second block
 	.mainBlockGalery{
 		display: flex;
-		max-width: 1550px;
 		z-index: 2;
 		.imgBlock{
 			height: 100vh;
-			width: 71vw;
+			width: 74vw;
 		}
 		.slides{
 			margin-top: 7.75rem;
-			margin-left: 5.375rem;
+			margin-left: 0;
 			overflow: scroll;
 			overflow-x: hidden;
 			ul{
@@ -182,10 +185,10 @@
 	}
 	// third block
 	.mainBlockParamets{
-		height: 70vh;
-		width: 70vw;
+		height: 50vh;
+		width: 60vw;
 		z-index: 2;
-		margin: 6.375rem auto;
+		margin: 6rem auto;
 		.mainTable{
 			margin: 1rem 0;
 			&:hover{
@@ -197,7 +200,7 @@
 			color: $yellowColor;
 		}
 		.blockTable{
-			padding: 1.875rem 0;
+			padding: 1rem 0;
 			&:hover{
 				color: #000;
 			}
@@ -210,5 +213,9 @@
 	.hideDes{
 		display: none;
 		z-index: 2
+	}
+	.buttonInDitales{
+		background-color: transparent;
+		transform: translateY(0rem);
 	}
 }
