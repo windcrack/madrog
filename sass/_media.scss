@@ -1,6 +1,6 @@
 @media screen and (max-width: 1368px){
 	.popup-requestQuote,
-	.popup-phoneCallback
+	.popup-phoneCallback,
 	.popupRequsetVisible{
 		width: 302px;
 	}
@@ -10,6 +10,7 @@
 	}
 	.popup-phoneCallback{
 		right: 2rem;
+		transform: translateX(5%);
 	}
 	header{
 		ul{
@@ -22,13 +23,12 @@
 	        }
 		}
 	}
+	.header-nav-call{
+		transform: translateX(14rem);
+	}
 	.button-description,
 	.button-application{
-		-webkit-transform: translateY(40%) translateX(-20%);
-		-ms-transform: translateY(40%) translateX(-20%);
-		-o-transform: translateY(40%) translateX(-20%);
-		-moz-transform: translateY(40%) translateX(-20%);
-		transform: translateY(40%) translateX(-24%);
+		transform: translateY(0%) translateX(0%);
 	}
 	.container{
 		.text-block{
