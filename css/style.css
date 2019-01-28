@@ -799,10 +799,14 @@ textarea {
   }
   .details .mainBlockParamets {
     max-width: 1024px;
-    margin: 5.375rem auto;
+    margin: 3.375rem auto;
   }
   .details .mainBlockParamets .blockTable {
     padding: 0.625rem 0;
+  }
+  .details .mainBlockParamets .mainTableHead,
+  .details .mainBlockParamets .mainTable {
+    margin: 0;
   }
 
   .btnBlock {
