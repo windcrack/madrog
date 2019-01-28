@@ -223,6 +223,7 @@ textarea {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  margin: auto;
 }
 .popup-request-visible .closeBtn {
   color: #FBBA04;
