@@ -56,21 +56,6 @@ $(document).ready(function(){
         $('.galeryMy').attr('src', dataImg.galeryImg);
       }
   });
-  // $('.main').on('click', function(){
-  //     $('.main').html(dataImg.mainImgY);
-  //     $('.table').html(dataImg.tableImg);
-  //     $('.galery').html(dataImg.galeryImg);
-  // });
-  // $('.table').on('click', function(){
-  //     $('.main').html(dataImg.mainImg);
-  //     $('.table').html(dataImg.tableImgY);
-  //     $('.galery').html(dataImg.galeryImg);
-  // });
-  // $('.galery').on('click', function(){
-  //     $('.main').html(dataImg.mainImg);
-  //     $('.table').html(dataImg.tableImg);
-  //     $('.galery').html(dataImg.galeryImgY);
-  // });
 	$(() =>{
 		$('#phone-number').mask('+7(999) 999-99-99');
 	});
