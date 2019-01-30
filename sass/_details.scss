@@ -200,8 +200,12 @@
 			margin: 1rem 0;
 			color: $yellowColor;
 		}
-		.blockTable{
+		.blockTable,
+		.blockTableIn{
 			padding: 1rem 0;
+		}
+		.blockTableIn{
+			cursor: pointer;
 			&:hover{
 				color: #000;
 			}

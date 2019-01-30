@@ -132,7 +132,8 @@
 		.mainBlockParamets{
 			max-width: 1024px;
 			margin: 3.375rem auto;
-			.blockTable{
+			.blockTable,
+			.blockTableIn{
 				padding: 0.625rem 0;
 			}
 			.mainTableHead,

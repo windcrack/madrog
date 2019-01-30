@@ -809,10 +809,14 @@ textarea {
   margin: 1rem 0;
   color: #FBBA04;
 }
-.details .mainBlockParamets .blockTable {
+.details .mainBlockParamets .blockTable,
+.details .mainBlockParamets .blockTableIn {
   padding: 1rem 0;
 }
-.details .mainBlockParamets .blockTable:hover {
+.details .mainBlockParamets .blockTableIn {
+  cursor: pointer;
+}
+.details .mainBlockParamets .blockTableIn:hover {
   color: #000;
 }
 .details .showDes {
@@ -941,7 +945,8 @@ textarea {
     max-width: 1024px;
     margin: 3.375rem auto;
   }
-  .details .mainBlockParamets .blockTable {
+  .details .mainBlockParamets .blockTable,
+  .details .mainBlockParamets .blockTableIn {
     padding: 0.625rem 0;
   }
   .details .mainBlockParamets .mainTableHead,
