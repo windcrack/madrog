@@ -96,6 +96,15 @@
             return this;
         }
     };
+    
+    let selectActive = function(){
+        let elementActive = $('a');
+        if (!$(elementActive).hasClass('active')) {
+            $(elementActive).toggleClass('active');
+        }else{
+            $(elementActive).toggleClass('active');
+        }
+    }
 
     $.fn.horizon.defaults = {
         scrollTimeout: null,
@@ -145,14 +154,7 @@
         
     };
 
-    let selectActive = function(){
-        let elementActive = $('a');
-        if (!$(elementActive).hasClass('active')) {
-            $(elementActive).toggleClass('active');
-        }else{
-            $(elementActive).toggleClass('active');
-        }
-    }
+    
 
     var scrollLeft = function () {
         console.log('Scroll left');
@@ -161,7 +163,6 @@
         if (i2 > -1) {
             scrollTo(i2, $.fn.horizon.defaults.scrollDuration);
             selectActive();
-
         }else if($.fn.horizon.defaults.i == 0){
             scrollTo($.fn.horizon.defaults.limit - 1);
         }

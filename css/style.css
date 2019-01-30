@@ -632,6 +632,9 @@ textarea {
 .changeBlock ul li {
   padding-bottom: 1rem;
 }
+.changeBlock .changeContent:nth-child(2) {
+  margin-bottom: 0;
+}
 
 .details {
   background: url("../img/bgDetails.jpg") no-repeat center;
@@ -656,7 +659,7 @@ textarea {
   justify-content: space-between;
   margin: auto;
 }
-.details .contentDesc:nth-child(2) {
+.details .contentDesc:nth-child(3) {
   margin: 0;
 }
 .details .mainBlockDetails {

@@ -9,6 +9,11 @@
 			padding-bottom: 1rem;
 		}
 	}
+	.changeContent{
+		&:nth-child(2){
+			margin-bottom:0;
+		}
+	}
 }
 
 .details{
@@ -32,7 +37,7 @@
 		display: flex;
 		justify-content: space-between;
 		margin: auto;
-		&:nth-child(2){
+		&:nth-child(3){
 			margin: 0;
 		}
 	}

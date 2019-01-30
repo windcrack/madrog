@@ -1,7 +1,15 @@
 $(document).ready(function(){
 	let changeBlock = document.querySelector('.changeBlock'),
 		change = document.querySelectorAll('.changeContent'),
-		content = document.querySelectorAll('.contentDesc');
+		content = document.querySelectorAll('.contentDesc'),
+    dataImg = {
+      mainImg: 'img/mainFrame.svg',
+      galeryImg: 'img/galeryFrame.svg',
+      tableImg: 'img/tableFrame.svg',
+      mainImgY: 'img/mainFrameY.svg',
+      galeryImgY: 'img/galeryFrameY.svg',
+      tableImgY: 'img/tableFrameY.svg'
+  };
 	let hideContent = function(h) {
 		for (let i = h; i < content.length; i++){
 			content[i].classList.remove('showDes');
@@ -19,6 +27,7 @@ $(document).ready(function(){
 	if(changeBlock !== null){
 		changeBlock.addEventListener('click', e => {
 			let target = e.target;
+      console.log(target);
 			if (target && target.classList.contains('changeContent')) {
 				for(let i = 0; i < change.length; i++){
 					if(target == change[i]){
@@ -29,7 +38,39 @@ $(document).ready(function(){
 			}
 		});
 	}
-	
+  $('.changeBlock img').on('click', function(e){
+      let target = e.target;
+      if (target.classList.contains('mainMy')) {
+        $('.mainMy').attr('src', dataImg.mainImgY);
+        $('.tableMy').attr('src', dataImg.tableImg);
+        $('.galeryMy').attr('src', dataImg.galeryImg);
+      }
+      if (target.classList.contains('galeryMy')) {
+        $('.mainMy').attr('src', dataImg.mainImg);
+        $('.tableMy').attr('src', dataImg.tableImg);
+        $('.galeryMy').attr('src', dataImg.galeryImgY);
+      }
+      if (target.classList.contains('tableMy')) {
+        $('.mainMy').attr('src', dataImg.mainImg);
+        $('.tableMy').attr('src', dataImg.tableImgY);
+        $('.galeryMy').attr('src', dataImg.galeryImg);
+      }
+  });
+  // $('.main').on('click', function(){
+  //     $('.main').html(dataImg.mainImgY);
+  //     $('.table').html(dataImg.tableImg);
+  //     $('.galery').html(dataImg.galeryImg);
+  // });
+  // $('.table').on('click', function(){
+  //     $('.main').html(dataImg.mainImg);
+  //     $('.table').html(dataImg.tableImgY);
+  //     $('.galery').html(dataImg.galeryImg);
+  // });
+  // $('.galery').on('click', function(){
+  //     $('.main').html(dataImg.mainImg);
+  //     $('.table').html(dataImg.tableImg);
+  //     $('.galery').html(dataImg.galeryImgY);
+  // });
 	$(() =>{
 		$('#phone-number').mask('+7(999) 999-99-99');
 	});
